@@ -88,3 +88,37 @@ const MyComponent = props => {{
 ![Component](/component.jpeg)
 
 We are going to be using `BrowserRouter`
+
+
+```js
+function Jobshow() {
+    Const params = UserParams();
+    const jobId  = params.jobId;
+    const job = jobData[jobId];
+
+    return (
+        <div class="job-show">
+        <>
+    )
+}
+```
+
+
+
+
+### Wrapping in browser router
+
+```js
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
+);
+
+
+```
