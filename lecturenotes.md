@@ -50,3 +50,39 @@ root.render(
 
 
 ```
+
+
+```js
+const MyComponent = props => {
+    return (
+        <div className ="quotes">
+            <h1 id="title"> I love JavaScript! </h1>
+        </div>
+    );
+};
+```
+
+```js
+const MyComponent = props => {{
+    return (
+        <>
+        <h1>Quotes!</h1>
+        <div className="quotes">
+            <h1 id="title"> I love JavaScript! </h1>
+        </div>
+        <>
+    )
+}
+```
+
+
+
+## What causes a react component to rerender
+
+1.any change to props
+2.update to any internal state variable
+3.ancestor re-render
+
+
+#Component
+![Component](/component.jpeg)
