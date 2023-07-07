@@ -32,3 +32,21 @@ consts element = <img src={user.avaterURL}
 ```node
 npx create-react-app my-app --use-npm
 ```
+
+```js
+`import ReactDom from react-dom/client`;
+```
+
+
+```js
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
+
+
+```
