@@ -86,3 +86,5 @@ const MyComponent = props => {{
 
 #Component
 ![Component](/component.jpeg)
+
+We are going to be using `BrowserRouter`
