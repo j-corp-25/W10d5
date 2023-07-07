@@ -1,12 +1,16 @@
 import {NavLink} from "react-router-dom";
+import GalleryItem from "./GalleryItem";
 
 function GalleryNavigation({galleries}) {
-    console.log(galleries);
-    return (
 
+    const galleryList = galleries.map(gallery => {
+        return <GalleryItem key={gallery.id} gallery={gallery} />;
+  });
+
+    return (
         <nav>
-        <NavLink to='/a'> Home</NavLink>
-        <h1>Galleries</h1>
+        <NavLink to='/'> Home </NavLink>
+        <h1>{ galleryList }</h1>
         </nav>
 
     );
