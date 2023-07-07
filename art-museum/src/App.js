@@ -1,9 +1,10 @@
-import harvardArt from "./data/harvardArt";
+import { harvardArt } from "./data/harvardArt";
+import GalleryNavigation from "./components/GalleryNavigation";
 
 function App() {
-  console.log(harvardArt);
+  const galleries = harvardArt.records;
   return (
-    <h1>Hello from App </h1>
+    <GalleryNavigation galleries={galleries} />
   );
 }
 
