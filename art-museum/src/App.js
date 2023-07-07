@@ -1,10 +1,11 @@
-import { harvardArt } from "./data/harvardArt";
+import  harvardArt  from "./data/harvardArt";
 import GalleryNavigation from "./components/GalleryNavigation";
 
 function App() {
-  const galleries = harvardArt.records;
+  // const art = Object.values(harvardArt)
+
   return (
-    <GalleryNavigation galleries={galleries} />
+    <GalleryNavigation galleries={harvardArt.records} />
   );
 }
 
