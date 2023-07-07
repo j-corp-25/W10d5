@@ -10,7 +10,7 @@ function App() {
     <div className="pageWrapper">
       <Route path="/galleries/:galleryId" component={GalleryView} />
       <GalleryNavigation galleries={harvardArt.records} />
-      <GalleryView galleries = {harvardArt}/>
+      <GalleryView galls={harvardArt.records}/>
     </div>
 
   );

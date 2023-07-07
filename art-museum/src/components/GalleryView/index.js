@@ -1,27 +1,15 @@
 import { useParams } from "react-router-dom";
 
-function GalleryView(galleries) {
+function GalleryView(galls) {
     const galleryId  = useParams();
-
-
-
+    console.log(galls);
+    console.log(galls.gallerynumber);
 
     return (
-        <h1>{galleries.records.find(galleries.records[galleryid] === galleryId)}</h1>
-
+    <h1> HELP </h1>
+    // <h1>{galls.find(galls.values === galleryId)}</h1>
     )
-
 }
 
 export default GalleryView
 
-// function Jobshow() {
-//     const params = useParams();
-//     const jobId  = params.jobId;
-//     const job = jobData[jobId];
-
-//     return (
-//         <div class="job-show">
-//         <>
-//     )
-// }
